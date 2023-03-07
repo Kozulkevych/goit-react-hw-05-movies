@@ -18,7 +18,7 @@ const HomePage = () => {
   //   fetchMovies(page);
   // }, [page]);
   useEffect(() => {
-    const fetchMovies = async page => {
+    const fetchMovies = async () => {
       setIsLoading(true);
       try {
         const result = await getTrending(page);
@@ -29,7 +29,7 @@ const HomePage = () => {
         setIsLoading(false);
       }
     };
-    fetchMovies(page);
+    fetchMovies();
   }, [page]);
 
   const loadMore = () => {
