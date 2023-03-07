@@ -45,7 +45,7 @@ export const GenresMovie = styled.ul`
 export const TitleMovie = styled.h2`
   text-transform: uppercase;
   letter-spacing: 1.7;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   font-size: 28px;
   font-weight: 700px;
   margin-top: 0;
@@ -55,7 +55,7 @@ export const SubTitleMovie = styled.h3`
   text-transform: uppercase;
   text-align: start;
   letter-spacing: 1.7;
-  margin: 0 0 10px 0;
+  margin-bottom: 10px;
   font-size: 20px;
   font-weight: 500px;
 `;
