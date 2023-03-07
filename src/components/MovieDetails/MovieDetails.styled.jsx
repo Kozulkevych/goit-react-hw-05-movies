@@ -46,7 +46,7 @@ export const TitleMovie = styled.h2`
   text-transform: uppercase;
   letter-spacing: 1.7;
   margin-bottom: 20px;
-  font-size: 26px;
+  font-size: 28px;
   font-weight: 700px;
   margin-top: 0;
 `;
