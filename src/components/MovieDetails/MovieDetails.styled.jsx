@@ -28,14 +28,6 @@ export const ListMovie = styled.ul`
   padding-left: 0;
 `;
 
-export const InfoMovie = styled.div`
-  height: auto;
-  padding: 10px 30px;
-
-  border-bottom: 1px solid black;
-  border-top: 1px solid black;
-`;
-
 export const GenresMovie = styled.ul`
   display: flex;
   margin-left: 0;
@@ -55,7 +47,7 @@ export const SubTitleMovie = styled.h3`
   text-transform: uppercase;
   text-align: start;
   letter-spacing: 1.7;
-  margin-bottom: 10px;
+  margin:0 0 20px;
   font-size: 20px;
   font-weight: 500px;
 `;
@@ -76,4 +68,14 @@ export const LinkStyled = styled(Link)`
   &.active {
     color: blue;
   }
+`;
+
+export const InfoMovie = styled.div`
+  height: auto;
+  padding: 10px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  border-bottom: 1px solid black;
+  border-top: 1px solid black;
 `;
