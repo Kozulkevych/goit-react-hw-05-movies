@@ -53,6 +53,7 @@ export const TitleMovie = styled.h2`
 
 export const SubTitleMovie = styled.h3`
   text-transform: uppercase;
+  text-align: start;
   letter-spacing: 1.7;
   margin: 0 0 10px 0;
   font-size: 20px;
