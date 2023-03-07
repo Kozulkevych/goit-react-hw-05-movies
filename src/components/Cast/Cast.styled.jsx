@@ -6,11 +6,12 @@ export const CastList = styled.ul`
   max-width: 1200px;
   margin: 0 auto;
   flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
 `;
 
 export const CastItem = styled.li`
   text-align: center;
-  margin: 5px;
   width: 210px;
 `;
 
