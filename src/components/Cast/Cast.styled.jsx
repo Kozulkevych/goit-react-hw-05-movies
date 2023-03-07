@@ -4,7 +4,6 @@ export const CastList = styled.ul`
   list-style: none;
   display: flex;
   max-width: 1200px;
-  margin: 0 auto;
   flex-wrap: wrap;
   gap: 5px;
   justify-content: center;
