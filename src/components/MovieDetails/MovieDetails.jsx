@@ -27,13 +27,13 @@ export const MovieDetails = ({ movie }) => {
     genres,
     overview,
   } = movie;
-  const base_url = 'https://image.tmdb.org/t/p/w500';
+  const base_url_poster = 'https://image.tmdb.org/t/p/w500';
 
   return (
     <>
       <BoxMovie>
         <ImageMovie
-          src={poster_path ? `${base_url}${poster_path}` : defaultPoster}
+          src={poster_path ? `${base_url_poster}${poster_path}` : defaultPoster}
           alt={original_title}
           width="300"
         />
