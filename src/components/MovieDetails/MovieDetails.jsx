@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import {
   BoxMovie,
@@ -74,16 +73,3 @@ export const MovieDetails = ({ movie }) => {
   );
 };
 
-MovieDetails.propTypes = {
-  movie: PropTypes.shape({
-    genres: PropTypes.arrayOf(
-      PropTypes.shape({
-        name: PropTypes.string,
-      })
-    ),
-    vote_average: PropTypes.number,
-    poster_path: PropTypes.string,
-    title: PropTypes.string.isRequired,
-    overview: PropTypes.string,
-  }),
-};

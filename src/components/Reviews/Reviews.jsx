@@ -4,7 +4,6 @@ import { Loader } from 'components/Loader/Loader';
 import { getMovieReviews } from 'services/moviesApi';
 import { ReviewsList, ReviewItem, Author, Content } from './Rewiews.styled';
 import { toast } from 'react-toastify';
-import PropTypes from 'prop-types';
 
 const Reviews = () => {
   const [reviews, setReviews] = useState(null);
@@ -44,16 +43,6 @@ const Reviews = () => {
         ))}
     </>
   );
-};
-
-Reviews.propTypes = {
-  reviews: PropTypes.arrayOf(
-    PropTypes.shape({
-      author: PropTypes.string,
-      content: PropTypes.string,
-      id: PropTypes.string.isRequired,
-    })
-  ),
 };
 
 export default Reviews;

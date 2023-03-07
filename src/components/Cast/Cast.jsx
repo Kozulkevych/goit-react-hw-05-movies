@@ -5,7 +5,7 @@ import { Loader } from 'components/Loader/Loader';
 import defaultImage from 'image/default_image.jpg';
 import { CastList, CastItem, ActorImg, ActorName } from './Cast.styled';
 import { toast } from 'react-toastify';
-import PropTypes from 'prop-types';
+
 
 const Cast = () => {
   const [cast, setCast] = useState(null);
@@ -57,15 +57,5 @@ const Cast = () => {
   );
 };
 
-Cast.propTypes = {
-  cast: PropTypes.arrayOf(
-    PropTypes.shape({
-      name: PropTypes.string.isRequired,
-      character: PropTypes.string.isRequired,
-      id: PropTypes.number.isRequired,
-      profile_path: PropTypes.string,
-    })
-  ),
-};
 
 export default Cast;
