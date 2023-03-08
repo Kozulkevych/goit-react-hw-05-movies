@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { useLocation } from 'react-router-dom';
 import {
   BoxMovie,
@@ -48,8 +49,8 @@ export const MovieDetails = ({ movie }) => {
           <OverviewContent>{overview}</OverviewContent>
           <SubTitleMovie>Genres</SubTitleMovie>
           <GenresMovie>
-            {genres.map((genre, index) => (
-              <ItemGenre key={index}>{genre.name}</ItemGenre>
+            {genres.map(({name, id}) => (
+              <ItemGenre key={id}>{name}</ItemGenre>
             ))}
           </GenresMovie>
         </WrapperMovie>
@@ -73,3 +74,17 @@ export const MovieDetails = ({ movie }) => {
   );
 };
 
+MovieDetails.propTypes = {
+  movie: PropTypes.shape({
+    genres: PropTypes.arrayOf(
+      PropTypes.shape({
+        name: PropTypes.string,
+        id: PropTypes.number,
+      })
+    ),
+    vote_average: PropTypes.number,
+    poster_path: PropTypes.string,
+    title: PropTypes.string.isRequired,
+    overview: PropTypes.string,
+  }),
+};
